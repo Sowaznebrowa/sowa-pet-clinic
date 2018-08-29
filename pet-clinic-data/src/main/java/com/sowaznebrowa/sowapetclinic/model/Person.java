@@ -1,6 +1,6 @@
 package com.sowaznebrowa.sowapetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity{
 
     private String FirstName;
     private String lastName;
