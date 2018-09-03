@@ -1,8 +1,10 @@
 package com.sowaznebrowa.sowapetclinic.services;
 
+import com.sowaznebrowa.sowapetclinic.model.BaseEntity;
+
 import java.util.Set;
 
-public interface CrudService <T,ID> {
+public interface CrudService <T extends BaseEntity,ID> {
 
     T findById(ID id);
 
@@ -11,6 +13,6 @@ public interface CrudService <T,ID> {
     Set<T> findAll();
 
     void delete(T object);
-    
+
     void deleteById(ID id);
 }
